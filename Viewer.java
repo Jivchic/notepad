@@ -7,8 +7,7 @@ import javax.swing.JMenuItem;
 
 class Viewer{
 
-	//Controller controller;
-	
+	JFrame frame;
 	JTextArea textArea;
 
 	Viewer(){
@@ -45,7 +44,7 @@ class Viewer{
 		jMenuBar.add(menuEdit);
 
 
-		JFrame frame = new JFrame("Notepad");
+		frame = new JFrame("Notepad");
 		frame.setSize(600, 600);
 		frame.setLocationRelativeTo(null);
 		frame.add("Center", scroll);
@@ -53,5 +52,13 @@ class Viewer{
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);	
 	}
+
+	public JFrame getMainFrame() {
+		return frame;
+	}	
+
+	public void update(String text) {
+		textArea.setText(text);	
+	}	
 
 }
