@@ -32,9 +32,9 @@ class Controller implements ActionListener {
 		}
         } else if(command.equals("Save")) {
 
-		String textToFile
+		//String textToFile
 	}
-
+	}
 	private String readFromFile() {
 		String text = "";
 		JFileChooser fc = new JFileChooser();
@@ -73,3 +73,6 @@ class Controller implements ActionListener {
 				
 	}
 }
+
+
+
