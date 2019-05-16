@@ -19,22 +19,28 @@ class Controller implements ActionListener {
         	
 		String command = event.getActionCommand();
 
-        if(command.equals("Exit")){
-            System.out.println("GoodBye!");
-            System.exit(1);
+        	if(command.equals("Exit")){
+            		System.out.println("GoodBye!");
+            		System.exit(1);
         
-	} else if(command.equals("Open")) {
+		} else if(command.equals("Open")) {
 
-		String textFromFile = readFromFile();
+			String textFromFile = readFromFile();
 
-		if(!textFromFile.equals("")) {
-			viewer.update(textFromFile);
-		}
-        } else if(command.equals("Save")) {
+			if(!textFromFile.equals("")) {
+				viewer.update(textFromFile);
+			}
+        	
+		} else if(command.equals("Save")) {
+
+
+		} else if(command.equals("Print")) {
 
 		//String textToFile
+		}
 	}
-	}
+	
+
 	private String readFromFile() {
 		String text = "";
 		JFileChooser fc = new JFileChooser();

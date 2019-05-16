@@ -66,11 +66,6 @@ public class PrintDocument implements Printable {
 
 	}
 	
-	public void printImage() {
-
-	
-	}
-
 	public void doAction() {
 
 		System.out.println("Start to print doc.");
